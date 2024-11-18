@@ -150,10 +150,12 @@ This project demonstrates a fully functional contact management system designed 
 
 ## Challenges & Solutions
 
-- **Challenge**: Handling large datasets with pagination and sorting.
-  - **Solution**: MongoDB’s built-in support for pagination and sorting has been leveraged to ensure that the app can handle large contact lists efficiently. The frontend uses dynamic data fetching to handle pagination and sorting without needing to reload the page.
+- **Challenge**: Sorting contacts based on various fields.
+  - **Solution**: React states (`order` and `orderBy`) were used to track sorting preferences. Any changes in these values trigger `useEffect`, which fetches data from the backend with the correct sorting applied.
 
-- **Challenge**: Maintaining a smooth user experience for contact management.
-  - **Solution**: The app was built with React and Material UI components, ensuring fast updates and real-time interactions. Sorting and updating contacts does not require page reloads, and the layout remains consistent throughout.
+- **Challenge**: Maintaining a smooth and simple UI/UX on a single page.
+  - **Solution**: The app keeps all operations (add, update, delete) on the same page without requiring any page navigation. React and Material UI components were used to create a seamless user experience, ensuring that users can manage contacts without interruptions.
+
 
 This app provides an easy-to-use, scalable solution for managing contacts in a business environment. The use of modern technologies like MERN, Material UI, and Tailwind CSS ensures that it is both efficient and visually appealing.
+
