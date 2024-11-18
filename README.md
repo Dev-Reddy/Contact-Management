@@ -13,8 +13,8 @@ Ensure you have the following tools installed on your local machine:
 
 1. Clone the project to your local machine using the following command:
    ```bash
-   git clone <repository_url>
-   cd <project_directory>
+   git clone https://github.com/Dev-Reddy/Contact-Management.git
+   cd Contact-Management-main
    ```
 
 ### Backend Setup
